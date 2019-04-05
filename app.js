@@ -32,7 +32,6 @@ function pairs2Obj(str = "") {
     return obj;
 }
 
-app.use(express.static("assets"));
 app.set("view engine", "ejs");
 app.use(require("cookie-parser")());
 app.use(require("body-parser").urlencoded({extended: true}));
@@ -63,6 +62,8 @@ app.use(async (req, res, next) => {
         proxy(proxyURL)(req, res, next);
     } else next();
 });
+
+app.use(express.static("assets"));
 
 app.post("/login",
     passport.authenticate("local", { failWithError: true }),
