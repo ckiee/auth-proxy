@@ -1,0 +1,27 @@
+{
+  "name": "auth-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "RONTheCookie <ronthecookie0101@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1",
+    "express-session": "^1.15.6",
+    "log": "^5.0.0",
+    "log-node": "^5.1.0",
+    "mz": "^2.7.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "rethinkdbdash": "^2.3.31",
+    "session-rethinkdb": "^2.0.1"
+  },
+  "scripts": {
+    "start": "LOG_TIME=abs LOG_LEVEL=info node ."
+  }
+}
