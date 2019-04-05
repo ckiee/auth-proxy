@@ -1,6 +1,6 @@
 FROM node:11-alpine
 
-RUN apk add yarn
+RUN apk add yarn python alpine-sdk
 
 WORKDIR /usr/src/app
 
